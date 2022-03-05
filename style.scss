@@ -1,9 +1,11 @@
-*{
+* {
     padding: 0;
     margin: 0;
+    font-family: 'Manrope';
 }
 
-body{
+
+body {
     background-color: hsl(217, 19%, 38%);
     width: 100vw;
     height: 100vh;
@@ -12,9 +14,36 @@ body{
     justify-content: center;
 }
 
-#advice-box{
+#advice-container {
     width: 90%;
     height: 40%;
     background-color: hsl(217, 19%, 24%);
     margin-bottom: 100px;
+    text-align: center;
+
+
+}
+
+#advice-number-box {
+    display: flex;
+    width: 100%;
+    height: 25%;
+    justify-content: center;
+    align-items: center;
+    color: hsl(150, 100%, 66%);
+    font-weight: lighter;
+    font-size: 14px;
+    letter-spacing: 3px;
+}
+
+#advice-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    letter-spacing: 1px;
 }

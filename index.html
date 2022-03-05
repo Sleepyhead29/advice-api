@@ -7,29 +7,27 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;400&family=Manrope:wght@200;300;400;500&family=Roboto&family=Space+Mono:wght@400;700&display=swap');
+  </style>
 
   <title>Frontend Mentor | Advice generator app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  
-    <div id="advice-box">
+
+  <div id="advice-container">
+    <div id="advice-number-box">
       <h3 id="advice-number"></h3>
+    </div>
+    <div id="advice-box">
       <h2 id="advice"></h2>
     </div>
+  </div>
 
 
 
@@ -50,7 +48,7 @@
 
 
 
-  
+
   <!-- Advice text goes here -->
 
   <!-- <div class="attribution">
