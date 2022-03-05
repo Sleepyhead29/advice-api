@@ -1,6 +1,10 @@
 let adviceNumber = document.getElementById("advice-number");
 let advice = document.getElementById("advice");
 
+let reloadButton = document.getElementById('dice-container');
+reloadButton.addEventListener("click", () => {
+    location.reload();
+})
 
 const apiData = fetch("https://api.adviceslip.com/advice")
     .then(response => response.json())
@@ -14,3 +18,5 @@ const apiData = fetch("https://api.adviceslip.com/advice")
     .catch(error => console.log(error))
 
     .finally(displayMessage => console.log("API used"));
+
+    
