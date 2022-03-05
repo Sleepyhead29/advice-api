@@ -9,7 +9,7 @@ const apiData = fetch("https://api.adviceslip.com/advice")
         let receivedAdviceNb = data.slip.id;
         let receivedAdvice = data.slip.advice;
         adviceNumber.append(`ADVICE #${receivedAdviceNb}`);
-        advice.append(`${receivedAdvice}`);
+        advice.append(`"${receivedAdvice}"`);
     })
     .catch(error => console.log(error))
 
