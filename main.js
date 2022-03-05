@@ -11,3 +11,6 @@ const apiData = fetch("https://api.adviceslip.com/advice")
         adviceNumber.append(`ADVICE #${receivedAdviceNb}`);
         advice.append(`${receivedAdvice}`);
     })
+    .catch(error => console.log(error))
+
+    .finally(displayMessage => console.log("API used"));
