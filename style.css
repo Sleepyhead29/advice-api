@@ -70,6 +70,10 @@ body {
   top: 10%;
 }
 
+#dice-container:hover {
+  box-shadow: 0 0 50px 5px #52ffa8;
+}
+
 @media screen and (min-width: 1440px) {
   #advice-container {
     width: 50%;
